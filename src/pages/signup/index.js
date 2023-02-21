@@ -115,7 +115,17 @@ const Signup = () => {
           <input
             required
             value={numberOfCompletedSets}
-            onChange={e => setNumberOfCompletedSets(e.target.value)}
+            onChange={e => {
+              let n = e.target.value;
+              n = Number(n);
+              if (n <= 0) {
+                setNumberOfCompletedSets(1);
+              } else {
+                setNumberOfCompletedSets(Math.ceil(n));
+              }
+
+            }
+            }
             type={'number'} step={1} style={{width: '500px'}} className={'form-control form-control-sm'} />
         </p>
 
