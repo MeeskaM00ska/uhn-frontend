@@ -3,10 +3,10 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import {Grid, Paper} from "@mui/material";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Header} from "@/pages/components/header";
-import {SideBar} from "@/pages/components/sidebar";
-import {Recording} from "@/pages/components/recording";
-import {Demo} from "@/pages/components/demo";
+import {Header} from "@/components/header";
+import {SideBar} from "@/components/sidebar";
+import {Recording} from "@/components/recording";
+import {Demo} from "@/components/demo";
 
 const inter = Inter({ subsets: ['latin'] })
 
