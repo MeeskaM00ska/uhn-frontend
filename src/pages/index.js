@@ -21,7 +21,7 @@ export default function Home() {
       }}
         className={'p-3'}
       >
-        <Header />
+        {/* <Header /> */}
         <Grid container spacing={2}>
           <Grid item xs={1}>
             <SideBar />
