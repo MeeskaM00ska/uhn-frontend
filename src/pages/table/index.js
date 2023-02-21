@@ -18,7 +18,7 @@ const TableData = () => {
   }, []);
   return (
     <div className={'container bg-white'} style={{width: '100vw', height: '100vh'}}>
-      <div className={'w-50'}>
+      <div>
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
