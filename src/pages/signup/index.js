@@ -2,8 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState} from "react";
 import {Button} from "@mui/material";
 import {SERVER_URL} from '@/config';
-const Signup = () => {
+import {useRouter} from "next/router";
 
+const Signup = () => {
+  const router = useRouter();
   const [prescriptionId, setPrescriptionId] = useState('');
   const [name, setName] = useState('');
   const [doctorName, setDoctorName] = useState('');
@@ -12,10 +14,13 @@ const Signup = () => {
   const [finishStatus, setFinishStatus] = useState('done');
 
   const [valid, setValid] = useState(false);
+
+
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setValid(true);
 
     fetch(SERVER_URL + '/save', {
       mode: 'cors',
@@ -32,8 +37,9 @@ const Signup = () => {
         FinishStatus: finishStatus
       })
     }).then(res => {
-      if (res.status === 200) {
+      if (res.status === 201) {
         alert('Save success!')
+        setValid(true);
       } else {
         alert("Save fail!");
       }
@@ -137,6 +143,10 @@ const Signup = () => {
           <Button
             color={'inherit'}
             variant={'contained'}
+            onClick={() => {
+             router.push('/table')
+            }
+            }
           >
             Check Database!
           </Button>
