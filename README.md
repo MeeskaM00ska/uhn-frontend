@@ -171,7 +171,7 @@ Implement the features: Implement the features of the virtual rehabilitation pro
 
 By using the MVP pattern in our virtual rehabilitation website project, we achieve a clean separation of concerns and improve the maintainability, testability, and scalability of our codebase.
 
-#### Database & Azure (members:Mingyang Li)
+#### Database & Azure ()
 
 #### Backend (members:)
 
