@@ -143,7 +143,7 @@ This website is going to overcome the location barriers for patients that live f
 - PostgreSQL will be the database on Azure
 
 ```bash
-$ git clone https://github.com/csc301-2023-winter/3-university-health-network-T.git
+$ 
 $ cd Deliverable-2/app/server/
 $ npm install
 $ npm run devStart
